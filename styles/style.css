@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/miama');
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* shared styles  */
+
+p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.btn_primary {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    border-radius: 42px;
+    border: none;
+    background: rgb(230, 83, 60);
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 1.125rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* header style  */
+.header {
+    background: linear-gradient(180deg,
+            rgba(17, 17, 17, 1) 0%,
+            rgba(119, 119, 119, 0.270) 50%,
+            rgba(17, 17, 17, 0.07) 100%);
+
+    height: auto;
+    border: none;
+}
+
+/* navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.5625rem 11.875rem 0;
+}
+
+.fitness {
+    color: rgb(230, 83, 60);
+    font-size: 2.25rem;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.nav_options {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.home {
+    padding: 12px 24px;
+    border-radius: 46px;
+    background: rgb(230, 83, 60);
+    margin: 2px;
+    margin-right: 3rem;
+    cursor: pointer;
+}
+
+.nav_options p {
+    margin-right: 3rem;
+    cursor: pointer;
+    color: white;
+    font-size: 1.125rem;
+}
+
+.about {
+    margin-right: 1.5rem;
+    color: rgb(255, 255, 255);
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+/* header section styles  */
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 13.375rem 0 11.875rem;
+}
+
+.header_content_title {
+    color: rgb(255, 255, 255);
+    font-size: 4.875rem;
+    font-weight: 900;
+    margin-top: 6rem;
+}
+
+.shape {
+    font-family: 'Miama', sans-serif, cursive;
+    font-weight: 400;
+}
+
+.header_content p {
+    text-align: start;
+    margin-top: 1.75rem;
+}
+
+.btn_div {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.75rem;
+}
+
+.btn_download {
+    background: none;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.header_img {
+    margin-top: 2rem;
+}
+
+.header_img>img {
+    width: auto;
+    height: 100%;
+}
+
+.card1 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 65%;
+    top: 62%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+    background: rgba(48, 48, 48, 0.54);
+    padding: 1.25rem 1.4375rem;
+}
+
+.ellipse {
+    background: rgb(230, 83, 60);
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+    margin-right: 0.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card1_content h5 {
+    color: rgb(250, 250, 249);
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.card2 {
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 82.5%;
+    top: 29%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 1.5rem;
+}
+
+.card2 h5 {
+    color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.card2 p {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.8125rem;
+    font-weight: 400;
+}
+.bars{
+    display: none;
+}
+.btn_join2{
+    display: none;
+}
+
+/* responsive for mobile  */
+@media screen and (max-width: 576px) {
+
+    .nav_options, .btn_join1{
+        display: none;
+    }
+    .bars, .btn_join2{
+        display: block;
+    }
+    .bars i{
+        font-size: 1.125rem;
+    }
+    .btn_join{
+        display: block;
+    }
+    .navbar{
+        /* padding: 0; */
+        padding: 3.25rem 1.25rem 0;
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: space-between;
+    }
+    .header_container{
+        width: auto;
+        padding: 3.25rem 1.25rem 0;
+        flex-direction: column;
+    }
+    .header_content_title{
+        margin-top: 0;
+        font-size: 2rem;
+    }
+    .header_img img{
+        width: 100%;
+        height: 100%;
+    }
+    .card1{
+        left: 2rem;
+        top: 49.5rem;
+    }
+    .card2{
+        left: 14.5rem;
+        top: 33.5rem;
+    }
+    .btn_primary{
+        padding: 1rem 2.4rem;
+    }
+    
+}
