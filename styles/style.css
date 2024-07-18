@@ -322,6 +322,18 @@ p {
     left: 7%;
 }
 
+/* bmi_title_section styles  */
+.bmi_title_section{
+    margin-left: 24rem;
+    width: 36%;
+}
+.bmi_title_section h2{
+    text-align: start;
+}
+.bmi_title_section p{
+    text-align: start;
+    margin-top: 0.875rem;
+}
 
 /* responsive for mobile  */
 @media screen and (max-width: 576px) {
