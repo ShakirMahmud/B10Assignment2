@@ -16,14 +16,26 @@ body {
 
 
 /* shared styles  */
-
+.container{
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid rebeccapurple;
+    margin-top: 6.25rem;
+}
 p {
     color: rgba(255, 255, 255, 0.5);
     font-size: 1rem;
     font-weight: 400;
     text-align: center;
 }
-
+.section_title{
+    color: rgb(255, 255, 255);
+font-size: 3rem;
+font-weight: 900;
+text-align: center;
+white-space: nowrap;
+/* overflow: hidden; */
+}
 .btn_primary {
     display: flex;
     justify-content: center;
@@ -32,17 +44,31 @@ p {
     border: none;
     background: rgb(230, 83, 60);
     color: rgb(255, 255, 255);
-    font-family: Inter;
     font-size: 1.125rem;
     font-weight: 600;
     cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.card_title{
+    color: rgb(255, 255, 255);
+font-size: 1.125rem;
+font-weight: 600;
+text-align: center;
+margin-top: 1.875rem;
+}
+.card_para{
+    color: rgba(255, 255, 255, 0.5);
+font-size: 14px;
+font-weight: 400;
+margin-top: 0.375rem;
 }
 
 /* header style  */
 .header {
     background: linear-gradient(180deg,
             rgba(17, 17, 17, 1) 0%,
-            rgba(119, 119, 119, 0.270) 50%,
+            rgba(119, 119, 119, 0.4) 50%,
             rgba(17, 17, 17, 0.07) 100%);
 
     height: auto;
@@ -209,14 +235,39 @@ p {
     display: none;
 }
 
+/* Habit section styles  */
+.card_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3.625rem;
+}
+.img_card{
+    max-width: 231px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.img_card img{
+    border-radius: 100px;
+}
+.break{
+    display: none;
+}
 /* responsive for mobile  */
 @media screen and (max-width: 576px) {
-
+    .section_title{
+        font-size: 2rem;
+    }
     .nav_options, .btn_join1{
         display: none;
     }
-    .bars, .btn_join2{
+    .bars, .btn_join2, .break{
         display: block;
+    }
+    .p_break{
+        display: none;
     }
     .bars i{
         font-size: 1.125rem;
@@ -249,11 +300,25 @@ p {
         top: 49.5rem;
     }
     .card2{
-        left: 14.5rem;
+        left: 13rem;
         top: 33.5rem;
     }
     .btn_primary{
-        padding: 1rem 2.4rem;
+        padding: 1rem 2rem;
     }
-    
+    .btn_div{
+        justify-content: space-evenly;
+    }
+    .habit_section{
+        margin-top: 0;
+    }
+    .card_container{
+        flex-direction: column;
+    }
+    .img_card{
+        margin-top: 2.5rem;
+    }
+    .img_card1{
+        margin-top: 0;
+    }
 }
