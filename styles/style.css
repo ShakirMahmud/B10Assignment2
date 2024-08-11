@@ -19,7 +19,6 @@ body {
 .container {
     width: 70%;
     margin: 0 auto;
-    border: 2px solid rebeccapurple;
     margin-top: 6.25rem;
 }
 
@@ -521,6 +520,75 @@ td {
     font-weight: 400;
 }
 
+/* pricing section styles  */
+
+.pricing_container {
+    margin-top: 3.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.pricing_card {
+    border-radius: 16px;
+    text-align: center;
+    padding: 1.125rem;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.pricing_card h3 {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem 1rem 0 0;
+    padding: 1rem 0;
+    margin: -1.125rem -1.125rem 1.125rem;
+}
+
+.pricing_card h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: rgb(230, 83, 60);
+}
+
+.pricing_card p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin: 1rem 0;
+    text-align: start;
+}
+
+.pricing_card ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1.25rem 0;
+    text-align: left;
+}
+
+.pricing_card ul li {
+    padding: 0.35rem 0;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.featured {
+    transform: scale(1.1);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.9);
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.14);
+}
+.featured h3{
+    background: rgba(255, 255, 255, 0.15);
+}
+.pricing_card button{
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+}
+.featured button{
+    background: rgb(230, 83, 60);
+}
+
 /* responsive for mobile  */
 @media screen and (max-width: 576px) {
     .container {
@@ -659,6 +727,7 @@ td {
         padding: 0;
         flex-direction: column;
         padding: 2rem 1.25rem 2.125rem;
+        margin-top: 1.25rem;
     }
 
     table {
@@ -684,9 +753,12 @@ td {
         width: 79%;
         grid-template-columns: repeat(1, 1fr);
     }
+    .fitness_section{
+        margin-top: 4.125rem;
+    }
     .fitness_contents{
         flex-direction: column;
-        padding: 2.25rem 1.125rem 0;
+        padding: 2.25rem 1.25rem 0;
     }
     .fitness_div_1{
         margin-bottom: 0.625rem;
@@ -697,6 +769,28 @@ td {
     .copyright{
         margin: 2.5625rem 0 0 0;
         padding-bottom: 3.5625rem;
+    }
+    .copyright p{
+        text-align: start;
+        margin-left: 1.125rem;
+    }
+    .margin{
+       width: 90%;;
+    }
+
+    .pricing_container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .pricing_card{
+        width: 90%;
+    }
+    .featured {
+        order: -1; 
+        transform: none;
+        box-shadow: none;
+        z-index: auto;
+        width: 90%;
     }
 
 }
