@@ -511,7 +511,7 @@ td {
 }
 
 .copyright {
-    margin: 2.25rem;
+    margin: 2.25rem 2.25rem 0 2.25rem;
     padding-bottom: 2.25rem;
 }
 
@@ -753,6 +753,9 @@ td {
     .meet_image_section {
         width: 79%;
         grid-template-columns: repeat(1, 1fr);
+    }
+    .visibility{
+        display: none;
     }
     .fitness_section{
         margin-top: 4.125rem;
